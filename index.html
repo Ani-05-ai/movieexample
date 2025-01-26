@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREE MOVIE WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+    <header>
+        <nav>
+            <div id="header-content">
+                <h1 id="Title">CHILFLIX</h1>
+                <div class="rotating-wheel">
+                    <!-- Glowy Rotating Camera Icon -->
+                </div>
+                <button id="flip" onclick="toggleDarkMode()">Dark Mode</button>
+            </div>
+            <div id="search-container">
+                <input type="text" id="movie_name" placeholder="Enter Movie Code">
+                <button id="update_btn">Search</button>
+            </div>
+        </nav>
+    </header>
+
+    <div id="movie-container">
+        <p id="movie-title">WATCH:ZOOTOPIA</p>
+        <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2948356" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="recommendations">
+        <h2>RECOMMENDED MOVIES</h2>
+        <div class="movie-recommendations">
+            <!-- Example movie recommendations, replace these with real movie data -->
+            <div class="movie">
+                <img src="mogli.jpg" alt="Movie 1" class="movie-img">
+                <p>MOWGLI</p>
+                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2388771" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <img src="golden.jpg" alt="Movie 2" class="movie-img">
+                <p>THE GOLDEN COMPASS</p>
+                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt0385752" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <img src="narnia.jpg" alt="Movie 3" class="movie-img">
+                <p>THE CHRONICLES OF THE NARNIA</p>
+                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt0363771" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+            </div>
+            <div class="movie">
+                <img src="beat.jpeg" alt="Movie 3" class="movie-img">
+                <p>THE BEAUTY AND THE BEAST</p>
+                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2771200" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
+            </div>
+        </div>
+        <button id="next_btn">Next</button>
+    </div>
+
+    <h2>Product API reference</h2>
+    <P>        </P>
+    <h5>Watch your favourite movies for free by using their IMDb code.</h5>
+    <ul>Enjoy!</ul>
+    <main id="container"></main>
+    <script src="scripts.js"></script>
+</body>
+</html>
