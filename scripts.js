@@ -27,3 +27,8 @@ document.getElementById('next_btn').addEventListener('click', () => {
     // Replace this with your actual recommendation logic
     alert('Loading next set of movie recommendations...');
 });
+
+function playMovie(imdbCode) {
+    const iframe = document.getElementById('movie_iframe');
+    iframe.src = `https://vidsrc.xyz/embed/movie?imdb=${imdbCode}`;
+}

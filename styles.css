@@ -62,7 +62,6 @@ button {
     border-top: 14px solid lightblue;
     border-radius: 95%;
     animation: clock 2s linear infinite, shine 2s infinite;
-   
 }
 
 @keyframes clock {
@@ -109,11 +108,11 @@ button {
     cursor: pointer;
     background-color: lightgray;
     color: black;
-    animation: glow 2s infinite;
+    animation: glow 1s infinite;
 }
 
 #movie-container {
-    background: url('floral-pattern.png') no-repeat center center fixed;
+    background: url('flower.png') no-repeat center center fixed;
     background-size: cover;
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -149,10 +148,17 @@ iframe {
 }
 
 .movie img {
-    width: 270px; /* Increase image width */
+    width: 450px; /* Increase image width */
     height: 330px; /* Increase image height */
     border-radius: 10px;
     box-shadow: 0 0 10px lightblue;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover effect for movie images */
+.movie-img:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 0 15px lightblue; /* Add a glowing shadow */
 }
 
 #next_btn {

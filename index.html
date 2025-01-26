@@ -10,7 +10,7 @@
     <header>
         <nav>
             <div id="header-content">
-                <h1 id="Title">CHILFLIX</h1>
+                <h1 id="Title">CHILLFLIX</h1>
                 <div class="rotating-wheel">
                     <!-- Glowy Rotating Camera Icon -->
                 </div>
@@ -24,34 +24,65 @@
     </header>
 
     <div id="movie-container">
-        <p id="movie-title">WATCH:ZOOTOPIA</p>
+        <p id="movie-title">WATCH:</p>
         <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2948356" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
     </div>
 
     <div id="recommendations">
         <h2>RECOMMENDED MOVIES</h2>
         <div class="movie-recommendations">
-            <!-- Example movie recommendations, replace these with real movie data -->
+            <!-- First row of movies -->
             <div class="movie">
-                <img src="mogli.jpg" alt="Movie 1" class="movie-img">
+                <img src="mogli.jpg" alt="Movie 1" class="movie-img" id="mogli-img" onclick="playMovie('tt2388771')">
                 <p>MOWGLI</p>
-                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2388771" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
             </div>
             <div class="movie">
-                <img src="golden.jpg" alt="Movie 2" class="movie-img">
+                <img src="golden.jpg" alt="Movie 2" class="movie-img" id="golden-img" onclick="playMovie('tt0385752')">
                 <p>THE GOLDEN COMPASS</p>
-                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt0385752" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
             </div>
             <div class="movie">
-                <img src="narnia.jpg" alt="Movie 3" class="movie-img">
+                <img src="narnia.jpg" alt="Movie 3" class="movie-img" id="narnia-img" onclick="playMovie('tt0363771')">
                 <p>THE CHRONICLES OF THE NARNIA</p>
-                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt0363771" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
             </div>
             <div class="movie">
-                <img src="beat.jpeg" alt="Movie 3" class="movie-img">
+                <img src="beat.jpeg" alt="Movie 4" class="movie-img" id="beat-img" onclick="playMovie('tt2771200')">
                 <p>THE BEAUTY AND THE BEAST</p>
-                <iframe id="movie_iframe" src="https://vidsrc.xyz/embed/movie?imdb=tt2771200" frameborder="1" referrerpolicy="origin" allowfullscreen></iframe>
             </div>
+            <!-- Second row of movies -->
+            <div class="movie">
+                <img src="car.jpg" alt="Movie 5" class="movie-img" id="movie5-img" onclick="playMovie('tt1216475')">
+                <p>CARS 2</p>
+            </div>
+            <div class="movie">
+                <img src="frozen.jpeg" alt="Movie 6" class="movie-img" id="movie6-img" onclick="playMovie('tt2294629')">
+                <p>FROZEN</p>
+            </div>
+            <div class="movie">
+                <img src="tangle.jpg" alt="Movie 7" class="movie-img" id="movie7-img" onclick="playMovie('tt0398286')">
+                <p>TANGLED</p>
+            </div>
+            <div class="movie">
+                <img src="cin.jpg" alt="Movie 8" class="movie-img" id="movie8-img" onclick="playMovie('tt1661199')">
+                <p>CINDERELLA</p>
+            </div>
+            <!-- Third row of movies -->
+            <div class="movie">
+                <img src="scoo.jpg" alt="Movie 9" class="movie-img" id="movie9-img" onclick="playMovie('tt0267913')">
+                <p>SCOOBY-DOO</p>
+            </div>
+            <div class="movie">
+                <img src="mer.jpg" alt="Movie 10" class="movie-img" id="movie10-img" onclick="playMovie('tt0097757')">
+                <p>THE LITTLE MERMAID</p>
+            </div>
+            <div class="movie">
+                <img src="moana.jpg" alt="Movie 11" class="movie-img" id="movie11-img" onclick="playMovie('tt3521164')">
+                <p>MOANA</p>
+            </div>
+            <div class="movie">
+                <img src="mulan.jpg" alt="Movie 12" class="movie-img" id="movie12-img" onclick="playMovie('tt4566758')">
+                <p>MULAN</p>
+            </div>
+    
         </div>
         <button id="next_btn">Next</button>
     </div>
@@ -59,8 +90,10 @@
     <h2>Product API reference</h2>
     <P>        </P>
     <h5>Watch your favourite movies for free by using their IMDb code.</h5>
-    <ul>Enjoy!</ul>
+    <ul>project by Anindita Sarkar</ul>
+    <ul>-Powered by SKEPSIS</ul>
     <main id="container"></main>
     <script src="scripts.js"></script>
 </body>
 </html>
+
